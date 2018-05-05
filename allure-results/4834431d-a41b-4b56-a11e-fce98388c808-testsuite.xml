@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1525551607377' stop='1525551610354'>
+    <name>validate register</name>
+    <title>validate register</title>
+    <test-cases>
+        <test-case start='1525551609171' status='passed' stop='1525551610354'>
+            <name>Should register with no gender</name>
+            <title>Should register with no gender</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

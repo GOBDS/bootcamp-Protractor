@@ -1,0 +1,161 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1525551159613' stop='1525551192880'>
+    <name>validate login</name>
+    <title>validate login</title>
+    <test-cases>
+        <test-case start='1525551166039' status='passed' stop='1525551166220'>
+            <name>Should check if page is valid</name>
+            <title>Should check if page is valid</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551166221' status='passed' stop='1525551166335'>
+            <name>Should fail with an empty user/password</name>
+            <title>Should fail with an empty user/password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551166335' status='passed' stop='1525551168265'>
+            <name>Should fail with an invalid user/password with: user1</name>
+            <title>Should fail with an invalid user/password with: user1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551168265' status='passed' stop='1525551169627'>
+            <name>Should fail with an invalid user/password with: user2</name>
+            <title>Should fail with an invalid user/password with: user2</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551169627' status='passed' stop='1525551171021'>
+            <name>Should fail with an invalid user/password with: user3</name>
+            <title>Should fail with an invalid user/password with: user3</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551171021' status='passed' stop='1525551172356'>
+            <name>Should fail with an invalid user/password with: user4</name>
+            <title>Should fail with an invalid user/password with: user4</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551172356' status='passed' stop='1525551173692'>
+            <name>Should fail with an invalid user/password with: user5</name>
+            <title>Should fail with an invalid user/password with: user5</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551173692' status='passed' stop='1525551175031'>
+            <name>Should fail with an invalid user/password with: user6</name>
+            <title>Should fail with an invalid user/password with: user6</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551175031' status='passed' stop='1525551176349'>
+            <name>Should fail with an invalid user/password with: user7</name>
+            <title>Should fail with an invalid user/password with: user7</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551176349' status='passed' stop='1525551177697'>
+            <name>Should fail with an invalid user/password with: user8</name>
+            <title>Should fail with an invalid user/password with: user8</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551177697' status='passed' stop='1525551179065'>
+            <name>Should fail with an invalid user/password with: user9</name>
+            <title>Should fail with an invalid user/password with: user9</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551179065' status='passed' stop='1525551180361'>
+            <name>Should fail with an invalid user/password with: user10</name>
+            <title>Should fail with an invalid user/password with: user10</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551180361' status='failed' stop='1525551186500'>
+            <name>Should fail with an empty user</name>
+            <title>Should fail with an empty user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected true to be false.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/e2e/login/login.component.e2e-spec.ts:46:45)
+                    at /Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:1067:7)
+                    at ControlFlow.promise (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2396:12)
+                    at schedulerExecute (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2970:14)
+                    at TaskQueue.executeNext_ (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2953:27)
+                    at asyncRun (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2860:25)
+                    at /Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:676:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1525551186506' status='passed' stop='1525551188004'>
+            <name>Should fail with an invalid password</name>
+            <title>Should fail with an invalid password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1525551188005' status='failed' stop='1525551191163'>
+            <name>Should fail with an empty password</name>
+            <title>Should fail with an empty password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected true to be false.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/e2e/login/login.component.e2e-spec.ts:61:45)
+                    at /Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:1067:7)
+                    at ControlFlow.promise (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2396:12)
+                    at schedulerExecute (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2970:14)
+                    at TaskQueue.executeNext_ (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2953:27)
+                    at asyncRun (/Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:2860:25)
+                    at /Users/bootcamp/Downloads/bootcamp/bootcamp-Protractor/node_modules/selenium-webdriver/lib/promise.js:676:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1525551191163' status='passed' stop='1525551192879'>
+            <name>Should login with a valid user/password</name>
+            <title>Should login with a valid user/password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

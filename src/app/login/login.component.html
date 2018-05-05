@@ -1,0 +1,19 @@
+<div class="content text-center">
+  <form [formGroup]="loginForm" class="form-signin d-flex justify-content-center align-items-center">
+    <div class="col-12">
+      <img class="mb-4" src="/assets/venturus-v.png" width="72" height="72">
+      <h3 class="h3 mb-3 font-weight-normal">Welcome</h3>
+      
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="text" formControlName="username" id="inputUsername" class="form-control mb-3" placeholder="Username" autofocus="">
+      
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" formControlName="password" id="inputPassword" class="form-control" placeholder="Password">
+      
+      <div id="invalidCredentialsError" class="invalid-feedback d-block mb-3" *ngIf="loginError">
+        Invalid username and/or password
+      </div>
+      <button id="loginBtn" class="btn  btn-primary btn-block" [disabled]="loginForm.invalid" type="button" (click)="login(credentials)">Sign in</button>
+    </div>
+  </form>
+</div>

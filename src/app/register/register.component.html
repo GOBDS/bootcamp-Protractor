@@ -1,0 +1,78 @@
+<form [formGroup]="registerForm">
+  <div class="form-row">
+    <div class="col-12 col-md-4 offset-md-4 mt-5 text-center">
+      <h3 class="section-title">
+        <a routerLink="../" class="float-left">
+          <i class="fa fa-angle-left arrow-back"></i>
+        </a>
+        Register
+      </h3>
+    </div>
+    <!-- First name-->
+    <div class="form-group col-12 col-md-4 offset-md-4">
+      <label for="firstName">First name</label>
+      <input formControlName="firstName" name="firstName" id="firstName" type="text" class="form-control" [ngClass]="{'is-invalid': hasError('firstName')}"
+      />
+      <div class="invalid-feedback">
+        {{errorLabel(getError('firstName'), 'First name')}}
+      </div>
+    </div>
+    <!-- Last name-->
+    <div class="form-group col-12 col-md-4 offset-md-4">
+      <label for="lastName">Last name</label>
+      <input formControlName="lastName" name="lastName" id="lastName" type="text" class="form-control" [ngClass]="{'is-invalid': hasError('lastName')}"
+      />
+      <div class="invalid-feedback">
+          {{errorLabel(getError('lastName'), 'Last name')}}
+      </div>
+    </div>
+    <!-- Cellphone-->
+    <div class="form-group col-12 col-md-4 offset-md-4">
+      <label for="cellphone">Cellphone number</label>
+      <input [textMask]="{mask: cellPhoneMask}" formControlName="cellphone" name="cellphone" id="cellphone" type="text" class="form-control"
+        [ngClass]="{'is-invalid': hasError('cellphone')}" />
+      <div class="invalid-feedback">
+          {{errorLabel(getError('cellphone'), 'Cellphone')}}
+      </div>
+    </div>
+    <!-- Gender selection-->
+    <div class="form-group col-12 col-md-4 offset-md-4">
+      <label for="gender">Gender</label>
+      <select formControlName="gender" [value]="undefined" name="gender" id="gender" class="form-control">
+        <option [value]="undefined">Not informed</option>
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+        <option value="o">Other</option>
+      </select>
+      <!-- Gender Opt out -->
+      <div class="form-check">
+        <input class="form-check-input" formControlName="genderOptOut" type="checkbox" value="" id="ckGenderOptOut">
+        <label class="form-check-label" for="ckGenderOptOut">
+          I prefer to not inform
+        </label>
+      </div>
+    </div>
+    <!-- Username-->
+    <div class="form-group col-12 col-md-4 offset-md-4">
+      <label for="username">Username</label>
+      <input formControlName="username" name="username" id="username" type="text" class="form-control" [ngClass]="{'is-invalid': hasError('username')}"
+      />
+      <div class="invalid-feedback">
+          {{errorLabel(getError('username'), 'Username')}}
+      </div>
+    </div>
+    <!-- Password-->
+    <div class="form-group col-12 col-md-4 offset-md-4">
+      <label for="password">Password</label>
+      <input formControlName="password" name="password" id="password" type="password" class="form-control" [ngClass]="{'is-invalid': hasError('password')}"
+      />
+      <div class="invalid-feedback">
+          {{errorLabel(getError('password'), 'Password')}}
+      </div>
+    </div>
+    <!-- Submit-->
+    <div class="col-8 offset-2 col-md-4 offset-md-4">
+      <button class="btn btn-primary btn-block" type="button" (click)="submitRegistration()" [disabled]="registerForm.invalid">Submit</button>
+    </div>
+  </div>
+</form>
